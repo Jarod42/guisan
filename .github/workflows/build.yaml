@@ -15,4 +15,5 @@ jobs:
         run: |
           cd ${{ github.workspace }}
           scons
+          scons -Q install
       - run: echo "🍏 This job's status is ${{ job.status }}."
